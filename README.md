@@ -20,22 +20,5 @@ For addressing the task at hand,we have trained the dataset on three different m
 -The question vector and flatten image vector are concatenated and fed into a series of dense layers
 
 
-
-
-
-CNN –LSTM Model with Stacked Attention
-
-
-![unnamed](https://user-images.githubusercontent.com/28951885/52520378-4751cf00-2c8f-11e9-9f21-ae4e3b5c3181.png)
-
-This model is a Keras implementation of the model proposed in the paper : 
-Stacked Attention Networks for Image Question Answering.
-Link to the paper :
-https://www.cvfoundation.org/openaccess/content_cvpr_2016/papers/Yang_Stacked_Attention_Networks_CVPR_2016_paper.pdf
-As in the paper,we have used 2 attention layers to capture region-wise relations between the objects in the image and objects referred to in the question
-
-
-![attn24](https://user-images.githubusercontent.com/28951885/52520375-3acd7680-2c8f-11e9-9adb-10de07378aef.jpg)
-
 To find the optimum parameters We tried to implement the Grid Search on the various the various hyper-parameters like number of dense units ,epochs,learning rate,etc . however later we came to know that one can’t apply gridsearch on multi-input models like the ones being used to solve the given problem statement. Thus various parameters like epochs,learning rate were manually tested by running various models and analysing the results. It was found that the optimizer Adadelta() at the default parameters preformed the best among the various other parameters like Adam, SGD , etc. 
 
