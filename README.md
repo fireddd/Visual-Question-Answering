@@ -8,10 +8,7 @@ Color: Gray, Cyan, Blue, Purple, Brown… (8 colors)
 The questions test the understanding regarding the various type of relationships between these objects. The relationships include the understanding of the position relative to the other objects i.e which of two objects lies to the left/right of the other or which of the two objects lies in front of/behind the other. 
 
 
-For addressing the task at hand,we have trained the dataset on three different models and chosen the model with the best relative accuracy score. Model architectures used are:
-1.  CNN-LSTM Model
-2.  Stacked Attention Model
-
+For addressing the task at hand,we have trained the dataset on different models and chosen the model with the best relative accuracy score. The Model architectures was chosen was CNN-LSTM Model.
 
 ![image1](https://user-images.githubusercontent.com/28951885/52520377-4456de80-2c8f-11e9-9851-e71919dd75fe.jpg)
 
